@@ -1,0 +1,11 @@
+<h1>Formulario reativo com formcontrol</h1>
+
+<label for="idnome">Nome</label>
+<input type="text" [formControl]="nome" id="idnome" placeholder="Informe nome">
+
+<label for="ididade">Idade</label>
+<input type="number" [formControl]="idade" id="ididade" placeholder="Informe idade">
+
+<button (click)="enviar()">Salvar</button>
+<p>{{nome.value}}</p>
+<p>{{idade.value}}</p>
