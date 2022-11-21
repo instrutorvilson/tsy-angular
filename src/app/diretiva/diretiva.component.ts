@@ -6,6 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./diretiva.component.css']
 })
 export class DiretivaComponent {
+  mostrar: boolean = false
+  rotulo: string = "show"
+  showHide(){
+    if(this.mostrar){
+      this.mostrar = false
+      this.rotulo = "show"
+    }
+    else{
+      this.mostrar = true
+      this.rotulo = "hide"
+    }
+  }
+
   carros: any = ["Fusca", "Brasilia", "Kombi", "TL", "Rural Willis"]
 
   contatos: any = [

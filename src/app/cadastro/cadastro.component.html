@@ -1,5 +1,33 @@
 <hr>
-<h2>Cadastro de Categoria</h2>
-<input type="text" name="" id="" placeholder="Informe descrição">
+<h2 class="text-center">Cadastro de Contato</h2>
+<div class="container">
+    <form #f="ngForm" (ngSubmit)="enviar(f.value)">
+        <label for="idnome" class="form-label">Nome</label>
+        <input type="text" ngModel name="nome"  placeholder="Informe nome" id="idnome" class="form-control"/>
 
-<p>Nome: {{nome}}</p>
+        <label for="idemail" class="form-label">Email</label>
+        <input type="text" ngModel name="email"  placeholder="Informe email" id="idemail" class="form-control" /> 
+
+        <label for="idfone" class="form-label">Email</label>
+        <input type="text" ngModel name="fone"  placeholder="Informe fone" id="idfone" class="form-control" /> 
+
+        <button class="btn btn-outline-primary mt-3">Salvar</button>
+    </form>
+    <h1 class="text-center mt-2">Lista de contatos</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Email</td>
+                <td>Fone</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ct of contatos">
+                <td>{{ct.nome}}</td>
+                <td>{{ct.email}}</td>
+                <td>{{ct.fone}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

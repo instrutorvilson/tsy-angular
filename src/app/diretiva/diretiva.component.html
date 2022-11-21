@@ -7,3 +7,11 @@
     <p>Email: {{ct.email}}</p>
     <p>Fone: {{ct.fone}}</p>
 </div>
+
+<h1>Diretiva estrutural IF</h1>
+<button (click)="showHide()"> {{rotulo}}
+</button>
+<p>{{ mostrar }}</p>
+<div *ngIf="mostrar">
+    <p>Ola Mundo!</p>
+</div>
