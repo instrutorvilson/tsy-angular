@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --red: rgb(226,0,116);
+  }
+
+h1{
+    background-color: var(--blue);
+}
+
+input{
+    width: 100%;
+    padding: 10px;    
+}
+
