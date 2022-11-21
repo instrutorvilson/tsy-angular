@@ -1,3 +1,4 @@
+<!--https://angular.io/guide/reactive-forms-->
 <h1>Formulario reativo com formcontrol</h1>
 
 <label for="idnome">Nome</label>
@@ -9,3 +10,20 @@
 <button (click)="enviar()">Salvar</button>
 <p>{{nome.value}}</p>
 <p>{{idade.value}}</p>
+
+<h1>Formulario reativo com agrupamento de controles</h1>
+<form [formGroup]="formContato">
+    <label for="idnome">Nome</label>
+    <input type="text" formControlName="nome" id="idnome" placeholder="Informe nome">
+
+    <label for="idemail">Email</label>
+    <input type="text" formControlName="email" id="idemail" placeholder="Informe email">
+
+    <label for="idfone">Fone</label>
+    <input type="text" formControlName="fone" id="idfone" placeholder="Informe fone">
+    
+    <p>{{formContato.value.nome}}</p>
+    <p>{{formContato.value.email}}</p>
+    <p>{{formContato.value.fone}}</p>
+    
+</form>
