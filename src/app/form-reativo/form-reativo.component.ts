@@ -13,6 +13,8 @@ export class FormReativoComponent {
       email: new FormControl('jose@gmail.com'),
       fone: new FormControl('(47)9999-0987')
     })
+
+    
   
     //formcontrol
     nome = new FormControl('Maria das dores')

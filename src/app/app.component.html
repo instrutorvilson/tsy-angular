@@ -1,19 +1,8 @@
-<!--
-<h1>interpolação</h1>
-<p>{{ title }}</p>
-<p>Nome: {{ nome }}</p>
-
-<h1>Property bind</h1>
-<label for="nome">Nome</label>
-<input type="text" name="" id="nome" [value]="nome" />
-
-<h1>Event bind</h1>
-<button (click)="trocarNome()" >Clique aqui</button>
-
- <h1>Two-way databind</h1>
- <label for="idnome"></label>
- <input type="text" [(ngModel)]="nome" id="idnome" />
- <label for="ididade">Idade</label>
- <input type="number" [(ngModel)]="idade" />
- -->
- <app-form-reativo></app-form-reativo>
+<h1>Agenda de contatos</h1>
+<nav>
+    <a routerLink="cadastro">Cadastro</a>
+    <a routerLink="formreativo">Form Reativo</a>
+</nav>
+<div>
+    <router-outlet></router-outlet>
+</div>

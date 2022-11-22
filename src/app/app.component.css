@@ -2,3 +2,7 @@ h1{
     background-color: var(--red);
 }
 
+a{
+    margin: 5px;
+}
+
