@@ -1,19 +1,23 @@
+<h1 class="text-center">Edição de contatos</h1>
 <div class="container">
     <form (ngSubmit)="alterar()">
-        <label for="id">Id</label>
+        <label for="id" class="form-label">Id</label>
         <input id="id" type="text" [(ngModel)]="contato.id" name="id" readonly/>
 
-        <label for="idnome">Nome</label>
-        <input id="idnome" type="text" placeholder="Informe nome" [(ngModel)]="contato.nome" name="nome"/>
+        <label for="idnome" class="form-label">Nome</label>
+        <input id="idnome" class="form-control" type="text" placeholder="Informe nome" [(ngModel)]="contato.nome" name="nome"/>
        
-        <label for="idemail">Email</label>
-        <input id="idemail" type="text" placeholder="Informe email" [(ngModel)]="contato.email" name="email"/>
+        <label for="idemail" class="form-label">Email</label>
+        <input id="idemail" class="form-label" type="text" placeholder="Informe email" [(ngModel)]="contato.email" name="email"/>
         
-        <label for="idfone">Fone</label>
-        <input id="idfone" type="text" placeholder="Informe fone" [(ngModel)]="contato.fone" name="fone"/>
+        <label for="idfone" class="form-label">Fone</label>
+        <input id="idfone" class="form-label" type="text" placeholder="Informe fone" [(ngModel)]="contato.fone" name="fone"/>
         
-        <button class="btn btn-primary mt-3">Alterar</button>
-        <input type="button" class="btn btn-primary mt-3" (click)="excluir()" value="Excluir" />
-        <p>{{msg}}</p>
+        <div class="mt-3 d-flex">
+            <button class="btn btn-primary">Alterar</button>
+            <input type="button" class="btn btn-danger w-300" (click)="excluir()" value="Excluir" />
+        </div>
+       
+        <p class="mt-4">{{msg}}</p>
     </form>
 </div> 

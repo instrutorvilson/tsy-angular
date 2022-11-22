@@ -1,12 +1,6 @@
 {
   "contatos": [
     {
-      "nome": "Maria da silva",
-      "email": "maria@hotmail.com",
-      "fone": "(47)9087-0980",
-      "id": 2
-    },
-    {
       "nome": "pedro",
       "email": "pedro@gmail.com",
       "fone": "(47)98851-1564",
