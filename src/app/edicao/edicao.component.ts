@@ -15,9 +15,8 @@ export class EdicaoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const routeParams = this.route.snapshot.paramMap
+    var routeParams = this.route.snapshot.paramMap
     this.emailcontato = routeParams.get('email')
   }
-
 
 }
