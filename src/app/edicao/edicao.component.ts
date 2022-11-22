@@ -25,4 +25,8 @@ export class EdicaoComponent implements OnInit {
     this.service.alterar(this.contato.id || 0, this.contato).subscribe(() => this.msg = "Registro alterado com sucesso" )
   }
 
+  excluir(){
+    this.service.excluir(this.contato.id || 0).subscribe(()=> this.msg = "Resgistro excluido com sucesso" )
+  }
+
 }

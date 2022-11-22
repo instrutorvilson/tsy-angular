@@ -1,28 +1,10 @@
 {
   "contatos": [
     {
-      "id": 1,
-      "nome": "jose",
-      "email": "jose@gmail.com",
-      "fone": "(47)9087-0987"
-    },
-    {
       "nome": "Maria da silva",
       "email": "maria@hotmail.com",
       "fone": "(47)9087-0980",
       "id": 2
-    },
-    {
-      "nome": "Josefa Pereira",
-      "email": "josefa@gmail.com",
-      "fone": "(47)98851-1564",
-      "id": 3
-    },
-    {
-      "nome": "Ana",
-      "email": "ana@gmail.com",
-      "fone": "(47)98851-1564",
-      "id": 4
     },
     {
       "nome": "pedro",
@@ -35,12 +17,6 @@
       "email": "antonio@gmail.com",
       "fone": "(47)98851-1564",
       "id": 6
-    },
-    {
-      "nome": "Joao",
-      "email": "joao@gmail.com",
-      "fone": "(47)98851-1564",
-      "id": 7
     }
   ]
 }

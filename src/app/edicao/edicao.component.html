@@ -1,18 +1,19 @@
-<div>
-    <form #f="ngForm" (ngSubmit)="alterar()">
+<div class="container">
+    <form (ngSubmit)="alterar()">
         <label for="id">Id</label>
-        <input type="text" [(ngModel)]="contato.id" name="id" readonly/>
+        <input id="id" type="text" [(ngModel)]="contato.id" name="id" readonly/>
 
         <label for="idnome">Nome</label>
-        <input type="text" placeholder="Informe nome" [(ngModel)]="contato.nome" name="nome"/>
+        <input id="idnome" type="text" placeholder="Informe nome" [(ngModel)]="contato.nome" name="nome"/>
        
         <label for="idemail">Email</label>
-        <input type="text" placeholder="Informe email" [(ngModel)]="contato.email" name="email"/>
+        <input id="idemail" type="text" placeholder="Informe email" [(ngModel)]="contato.email" name="email"/>
         
         <label for="idfone">Fone</label>
-        <input type="text" placeholder="Informe fone" [(ngModel)]="contato.fone" name="fone"/>
+        <input id="idfone" type="text" placeholder="Informe fone" [(ngModel)]="contato.fone" name="fone"/>
         
-        <button>Alterar</button>
+        <button class="btn btn-primary mt-3">Alterar</button>
+        <input type="button" class="btn btn-primary mt-3" (click)="excluir()" value="Excluir" />
         <p>{{msg}}</p>
     </form>
-</div>
+</div> 
