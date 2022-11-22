@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DiretivaComponent } from './diretiva/diretiva.component';
 import { FormReativoComponent } from './form-reativo/form-reativo.component';
+import { EdicaoComponent } from './edicao/edicao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
     DiretivaComponent,
-    FormReativoComponent
+    FormReativoComponent,
+    EdicaoComponent
   ],
   imports: [
     BrowserModule,

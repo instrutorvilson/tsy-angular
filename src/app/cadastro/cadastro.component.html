@@ -20,6 +20,7 @@
                 <td>Nome</td>
                 <td>Email</td>
                 <td>Fone</td>
+                <td>Ações</td>
             </tr>
         </thead>
         <tbody>
@@ -27,6 +28,9 @@
                 <td>{{ct.nome}}</td>
                 <td>{{ct.email}}</td>
                 <td>{{ct.fone}}</td>
+                <td>
+                    <a [routerLink]="['/editar',ct.email]">Editar</a>
+                </td>
             </tr>
         </tbody>
     </table>
