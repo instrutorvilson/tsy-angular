@@ -8,6 +8,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { DiretivaComponent } from './diretiva/diretiva.component';
 import { FormReativoComponent } from './form-reativo/form-reativo.component';
 import { EdicaoComponent } from './edicao/edicao.component';
+import { HomeComponent } from './home/home.component';
+import { ErroComponent } from './erro/erro.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { EdicaoComponent } from './edicao/edicao.component';
     CadastroComponent,
     DiretivaComponent,
     FormReativoComponent,
-    EdicaoComponent
+    EdicaoComponent,
+    HomeComponent,
+    ErroComponent
   ],
   imports: [
     BrowserModule,
