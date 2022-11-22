@@ -14,6 +14,14 @@ export class CadastroService {
     return this.http.get<[IContato]>("http://localhost:3000/contatos")
   }
 
+  consultarPorId(id:number){
+    return this.http.get<IContato>(`http://localhost:3000/contatos/${id}`)
+  }
+
+  alterar(id:number, dados: IContato){
+    return this.http.put<IContato>(`http://localhost:3000/contatos/${id}`, dados)
+  }
+  
   salvar(dados:IContato){
     return this.http.post<IContato>("http://localhost:3000/contatos",dados)
   }

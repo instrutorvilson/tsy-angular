@@ -1,1 +1,18 @@
-<p>{{emailcontato}}</p>
+<div>
+    <form #f="ngForm" (ngSubmit)="alterar()">
+        <label for="id">Id</label>
+        <input type="text" [(ngModel)]="contato.id" name="id" readonly/>
+
+        <label for="idnome">Nome</label>
+        <input type="text" placeholder="Informe nome" [(ngModel)]="contato.nome" name="nome"/>
+       
+        <label for="idemail">Email</label>
+        <input type="text" placeholder="Informe email" [(ngModel)]="contato.email" name="email"/>
+        
+        <label for="idfone">Fone</label>
+        <input type="text" placeholder="Informe fone" [(ngModel)]="contato.fone" name="fone"/>
+        
+        <button>Alterar</button>
+        <p>{{msg}}</p>
+    </form>
+</div>

@@ -20,7 +20,7 @@ const routes: Routes = [
     component: FormReativoComponent
   },
   {
-    path:'editar/:email',
+    path:'editar/:idcontato',
     component: EdicaoComponent
   },
   {
