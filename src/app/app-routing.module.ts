@@ -6,6 +6,7 @@ import { EdicaoComponent } from './edicao/edicao.component';
 import { ErroComponent } from './erro/erro.component';
 import { FormReativoComponent } from './form-reativo/form-reativo.component';
 import { HomeComponent } from './home/home.component';
+import { InfoComponent } from './info/info.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
@@ -29,6 +30,11 @@ const routes: Routes = [
   {
      path:'login',
      component: LoginComponent
+
+  },
+  {
+    path:'info/:mensagem',
+    component: InfoComponent
 
   },
   {
