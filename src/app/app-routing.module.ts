@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthAdmService } from './auth-adm.service';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { EdicaoComponent } from './edicao/edicao.component';
 import { ErroComponent } from './erro/erro.component';
 import { FormReativoComponent } from './form-reativo/form-reativo.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -13,7 +15,8 @@ const routes: Routes = [
   },
   {
     path: 'cadastro',
-    component: CadastroComponent
+    component: CadastroComponent,
+    canActivate:[AuthAdmService]
   },
   {
     path:'formreativo',
@@ -22,6 +25,11 @@ const routes: Routes = [
   {
     path:'editar/:idcontato',
     component: EdicaoComponent
+  },
+  {
+     path:'login',
+     component: LoginComponent
+
   },
   {
     path: '**',

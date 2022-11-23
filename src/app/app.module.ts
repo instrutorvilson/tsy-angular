@@ -12,6 +12,8 @@ import { FormReativoComponent } from './form-reativo/form-reativo.component';
 import { EdicaoComponent } from './edicao/edicao.component';
 import { HomeComponent } from './home/home.component';
 import { ErroComponent } from './erro/erro.component';
+import { LoginComponent } from './login/login.component';
+import { InfoComponent } from './info/info.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { ErroComponent } from './erro/erro.component';
     FormReativoComponent,
     EdicaoComponent,
     HomeComponent,
-    ErroComponent
+    ErroComponent,
+    LoginComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
