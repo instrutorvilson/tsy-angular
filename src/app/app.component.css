@@ -6,3 +6,19 @@ a{
     margin: 5px;
 }
 
+.example-container {
+   height: 100vh;    
+  }
+
+  ol{
+    list-style: none;
+    padding: 10px;
+  }
+
+  .mat-drawer{
+    background-color: aquamarine;
+  }
+  .mat-drawer-inner-container{
+    padding: 0px;
+  }
+

@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { ErroComponent } from './erro/erro.component';
 import { LoginComponent } from './login/login.component';
 import { InfoComponent } from './info/info.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav'
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { InfoComponent } from './info/info.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
