@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  constructor(private userService:UserService){}
+
+   logar(){
+      this.userService.logar().subscribe(data => console.log(data))
+   }
 }
